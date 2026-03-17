@@ -1,0 +1,5 @@
+import Link from "next/link";
+export const metadata = { title: "Trex Decks - LDN Decks" };
+export default function TrexDecksPage() {
+  return (<><section className="bg-dark text-white py-16"><div className="max-w-7xl mx-auto px-4"><h1 className="text-4xl md:text-5xl font-semibold">Trex Decks</h1><p className="text-gray-300 mt-4 text-lg">Certified Trex Pro Platinum Installer</p></div></section><section className="py-20"><div className="max-w-4xl mx-auto px-4"><p className="text-lg text-dark-text mb-8 leading-relaxed">As a certified Trex Pro Platinum installer, LDN Decks offers the complete line of Trex composite decking products backed by a 25-year warranty.</p><div className="grid md:grid-cols-3 gap-6 my-12">{["Trex Enhance","Trex Select","Trex Transcend"].map(n=>(<div key={n} className="bg-gray-light p-6 text-center"><h3 className="font-semibold text-dark">{n}</h3></div>))}</div><Link href="/contacts" className="bg-primary text-white px-8 py-4 font-semibold hover:bg-orange-700 transition inline-block">GET FREE ESTIMATE</Link></div></section></>);
+}

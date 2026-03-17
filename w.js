@@ -1,0 +1,1 @@
+const f=require("fs");f.writeFileSync("tailwind.config.ts",);console.log("done")

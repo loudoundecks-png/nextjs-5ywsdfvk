@@ -1,0 +1,6 @@
+import Link from "next/link";
+export const metadata = { title: "Our Process - LDN Decks" };
+export default function OurProcessPage() {
+  const steps = [{n:"01",t:"Free Consultation",d:"We visit your property and provide a detailed estimate."},{n:"02",t:"Design & Permits",d:"Our team creates 3D designs and handles permits."},{n:"03",t:"Construction",d:"Our skilled crew builds your deck with precision."},{n:"04",t:"Final Walkthrough",d:"Thorough inspection to ensure satisfaction."}];
+  return (<><section className="bg-dark text-white py-16"><div className="max-w-7xl mx-auto px-4"><h1 className="text-4xl md:text-5xl font-semibold">Our Process</h1><p className="text-gray-300 mt-4 text-lg">From consultation to completion in 4 simple steps</p></div></section><section className="py-20"><div className="max-w-4xl mx-auto px-4 space-y-12">{steps.map(s=>(<div key={s.n} className="flex gap-8 items-start"><div className="text-5xl font-bold text-primary">{s.n}</div><div><h2 className="text-2xl font-semibold text-dark mb-3">{s.t}</h2><p className="text-dark-text">{s.d}</p></div></div>))}</div><div className="text-center mt-16"><Link href="/contacts" className="bg-primary text-white px-8 py-4 font-semibold hover:bg-orange-700 transition inline-block">START YOUR PROJECT</Link></div></section></>);
+}
