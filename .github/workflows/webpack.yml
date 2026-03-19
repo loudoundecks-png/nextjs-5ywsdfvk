@@ -25,5 +25,5 @@ jobs:
     - name: Build
       run: |
         npm install
-        npm install --save-dev webpack webpack-cli
-        npx webpack
+        npm install --save-dev webpack webpack-cli ts-loader style-loader css-loader postcss-loader
+        npx webpack --config webpack.config.js
