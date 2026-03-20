@@ -18,6 +18,10 @@ module.exports = {
           loader: 'ts-loader',
           options: {
             transpileOnly: true,
+            compilerOptions: {
+              jsx: 'react-jsx',
+              noEmit: false,
+            },
           },
         },
         exclude: /node_modules/,
