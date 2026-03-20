@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="bg-white shadow-md sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-20">
             <Link href="/" className="flex items-center">
-              <Image src="https://ldndecks.com/wp-content/uploads/2024/09/ldndecks-logo-new-e1731874431860.webp" alt="LDN Decks Logo" width={180} height={50} priority />
+              <Image src="https://ldndecks.com/wp-content/uploads/2024/09/ldndecks-logo.png" alt="LDN Decks Logo" width={180} height={50} priority />
             </Link>
             <div className="hidden md:flex items-center gap-8">
               <Link href="/" className="text-dark font-medium hover:text-primary transition">Home</Link>
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-dark text-white">
           <div className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-4 gap-8">
             <div>
-              <Image src="https://ldndecks.com/wp-content/uploads/2024/09/ldndecks-logo-new-e1731874431860.webp" alt="LDN Decks" width={180} height={50} />
+              <Image src="https://ldndecks.com/wp-content/uploads/2024/09/ldndecks-logo.png" alt="LDN Decks" width={180} height={50} />
               <p className="text-gray-400 mt-4 text-sm">Northern Virginia's premier deck building company. Quality craftsmanship and exceptional service since 2014.</p>
             </div>
             <div>
